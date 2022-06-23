@@ -8,8 +8,8 @@ from IPython.display import display
 
 ###################################### lendo um excel ##############################################
 
-vendas_df = pd.read_excel('C:/Users/thall/Desktop/Aulas/Python para excel/Python-para-excel/tabela_vendas')
+vendas_df = pd.read_csv('https://raw.githubusercontent.com/Thallysson-br/Python-para-excel/main/tabela_vendas.csv', sep=';')
 
 display(vendas_df)
 
-vendas_df.to_excel('C:/Users/thall/Desktop/exports', 'Tabela Vendas')
+##vendas_df.to_excel('C:/Users/thall/Desktop/exports', 'Tabela Vendas')
