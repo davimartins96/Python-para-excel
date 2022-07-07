@@ -8,6 +8,7 @@ from IPython.display import display
 
 ################################### Lendo os arquivos #############################################
 
+
 vendas_df = pd.read_csv('tabela_vendas.csv', sep=';')
 clientes_df = pd.read_csv('tabela_clientes.csv', sep=';')
 
@@ -16,8 +17,16 @@ clientes_df = pd.read_csv('tabela_clientes.csv', sep=';')
 
 ################################### criando novas colunas #########################################
 
-vendas_df['Comissão'] = vendas_df['Lucro']*0.3
 
-vendas_df.loc[:, 'Modelo'] = 0
+
+display(vendas_df)
+
+
+
+#vendas_df['Comissão'] = vendas_df['Lucro']*0.3
+
+#vendas_df.loc[:, 'Modelo'] = 0
+
+#display(vendas_df)
 
 ###################################################################################################

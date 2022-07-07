@@ -8,11 +8,14 @@ from IPython.display import display
 
 ############################ importando tabelas ##################################
 
-clientes_df = pd.read_csv('join.csv')
-vendas_df = pd.read_csv('tabela_vendas.csv')
-vendas_df_join = pd.read_csv('vendas_join.csv')
+clientes_df = pd.read_csv('join.csv', sep=';')
+vendas_df = pd.read_csv('tabela_vendas.csv', sep=';')
+vendas_df_join = pd.read_csv('vendas_join.csv', sep=';')
 
 ##################################################################################
+
+display(clientes_df)
+display(vendas_df)
 
 ############################### left join ########################################
 
