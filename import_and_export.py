@@ -8,7 +8,7 @@ from IPython.display import display
 
 ###################################### lendo um excel ##############################################
 
-vendas_df = pd.read_csv('tabela_vendas.csv', sep=';')
+vendas_df = pd.read_excel('tabela_vendas.xlsx')
 
 display(vendas_df)
 
