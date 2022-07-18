@@ -90,7 +90,7 @@ dez_Lucro = vendas_df_dez['Lucro'].sum()
 valores = [jan_Lucro, fev_Lucro, mar_Lucro, abr_Lucro, mai_Lucro, jun_Lucro, jul_Lucro, ago_Lucro, set_Lucro, out_Lucro, nov_Lucro, dez_Lucro]
 nomes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
-plt.figure(figsize=(6,2))
+plt.figure(figsize=(18,6))
 
 x = [1, 2, 3 , 4 , 5 , 6, 7, 8, 9, 10, 11, 12]
 plt.subplot(131)
@@ -108,8 +108,6 @@ plt.subplot(132)
 
 plt.scatter(nomes, valores, c= 'k')
 plt.xticks(x, nomes, rotation=90)
-plt.xlabel('Meses')
-plt.ylabel('Lucro(R$)')
 plt.legend('Lucro anual')
 
 
@@ -117,8 +115,6 @@ plt.subplot(133)
 
 plt.plot(nomes, valores, 'm-.')
 plt.xticks(x, nomes, rotation=90)
-plt.xlabel('Meses')
-plt.ylabel('Lucro(R$)')
 plt.legend('Lucro anual')
 
 plt.suptitle('Diferentes gráficos')
